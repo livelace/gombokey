@@ -1,0 +1,10 @@
+[Unit]
+Description=gombokey
+
+[Service]
+User=gombokey
+Group=gombokey
+ExecStart=/usr/local/bin/gombokey
+
+[Install]
+WantedBy=multi-user.target

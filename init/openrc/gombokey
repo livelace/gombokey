@@ -1,0 +1,6 @@
+#!/sbin/openrc-run
+name="gombokey"
+command=/usr/local/bin/gombokey
+command_user="gombokey"
+command_background="yes"
+pidfile="/run/${RC_SVCNAME}.pid"
