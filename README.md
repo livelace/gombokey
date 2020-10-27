@@ -11,8 +11,13 @@
 * Parallel executions limits. Example: you can restrict task with only three parallel executions.
 * Execution timeout. Example: task will be killed, if it exceeds specific amount of time.
 
+### Quick start:
 
-### Example of configuration file:
+```shell script
+go get github.com/livelace/gombokey/cmd/gombokey
+```
+
+### Config sample:
 
 ```toml
 # Configuration file may be placed:
