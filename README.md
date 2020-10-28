@@ -8,8 +8,8 @@
 * "Hold and press" approach instead of classic shortcuts. Example: **"LEFTALT"**, **"A + A"**. Where combination consists of: **"LEFTALT"** - hold key,  **"A + A"** - pressed keys. Action will be performed right after "hold keys" **are released**.
 * "Pressed keys" are ordered. Example: **"A + B + A"** and **"A + A + B"** = are different. 
 * "Hold keys" can be hold arbitrary. Example: **"LEFTALT + LEFTCTRL"** and **"LEFTCTRL + LEFTALT"** = the same.
-* Parallel executions limits. Example: you can restrict task with only three parallel executions.
-* Execution timeout. Example: task will be killed, if it exceeds specific amount of time.
+* Parallel executions limits. Example: you can restrict task with only 3 parallel executions.
+* Execution timeout. Example: task will be killed, if it exceeds the specific amount of time.
 
 ### Quick start:
 
