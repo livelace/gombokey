@@ -6,7 +6,9 @@ libraries {
     git {
         repo_url = "https://github.com/livelace/gombokey.git"
     }
-    go
+    go {
+        options = "github.com/livelace/gombokey/cmd/gombokey"
+    }
     k8s_build {
         image = "harbor-core.k8s-2.livelace.ru/dev/gobuild:latest"
         privileged = true
