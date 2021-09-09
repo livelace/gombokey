@@ -5,9 +5,9 @@ libraries {
     }
     dependency_check
     dependency_track {
-            project = "gombokey"
-            version = "latest"
-        }
+        project = "gombokey"
+        version = "latest"
+    }
     git {
         repo_url = "https://github.com/livelace/gombokey.git"
     }
