@@ -18,5 +18,6 @@ libraries {
         source = 'gombokey-${VERSION}.appimage'
         destination = 'dists-internal/gombokey/gombokey-${VERSION}.appimage'
     }
+    sonarqube
     version
 }
