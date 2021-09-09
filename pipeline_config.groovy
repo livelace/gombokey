@@ -3,6 +3,7 @@ libraries {
         source = "gombokey"
         destination = 'gombokey-${VERSION}.appimage'
     }
+    dependency_check
     git {
         repo_url = "https://github.com/livelace/gombokey.git"
     }
