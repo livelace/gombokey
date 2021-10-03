@@ -1,6 +1,6 @@
 def APP_REPO = "https://github.com/livelace/gombokey.git"
 def APP_NAME = "gombokey"
-def APP_VERSION = '${VERSION}-${GIT_COMMIT_SHORT}'
+def APP_VERSION = VERSION  + '-${GIT_COMMIT_SHORT}'
 
 libraries {
     appimage {
@@ -10,11 +10,11 @@ libraries {
     dependency_check
     dependency_track {
         project = "${APP_NAME}"
-        version = env.VERSION
+        version = VERSION
     }
     git {
         repo_url = "${APP_REPO}"
-        repo_branch = env.VERSION
+        repo_branch = VERSION
     }
     go {
         options = "github.com/livelace/gombokey/cmd/gombokey"
