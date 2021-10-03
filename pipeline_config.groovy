@@ -14,7 +14,7 @@ libraries {
     }
     git {
         repo_url = "${APP_REPO}"
-        repo_branch = "${VERSION}"
+        repo_branch = '${VERSION}'
     }
     go {
         options = "github.com/livelace/gombokey/cmd/gombokey"
