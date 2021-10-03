@@ -10,11 +10,11 @@ libraries {
     dependency_check
     dependency_track {
         project = "${APP_NAME}"
-        version = VERSION
+        version = env.VERSION
     }
     git {
         repo_url = "${APP_REPO}"
-        repo_branch = VERSION
+        repo_branch = env.VERSION
     }
     go {
         options = "github.com/livelace/gombokey/cmd/gombokey"
