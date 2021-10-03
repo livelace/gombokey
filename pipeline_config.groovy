@@ -21,7 +21,7 @@ libraries {
     mattermost
     nexus {
         source = "gombokey-${env.VERSION}.appimage"
-        destination = 'dists-internal/gombokey/gombokey-${env.VERSION}.appimage'
+        destination = "dists-internal/gombokey/gombokey-${env.VERSION}.appimage"
     }
     sonarqube
     version
