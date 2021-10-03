@@ -5,7 +5,7 @@ def APP_VERSION = env.VERSION + '-${GIT_COMMIT_SHORT}'
 libraries {
     appimage {
         source = "${APP_NAME}"
-        destination = "gombokey-${APP_VERSION}.appimage"
+        destination = "${APP_NAME}-${APP_VERSION}.appimage"
     }
     dependency_check
     dependency_track {
@@ -26,7 +26,7 @@ libraries {
     mattermost
     nexus {
         source = "${APP_NAME}-${APP_VERSION}.appimage"
-        destination = "dists-internal/gombokey/${APP_NAME}-${APP_VERSION}.appimage"
+        destination = "dists-internal/${APP_NAME}/${APP_NAME}-${APP_VERSION}.appimage"
     }
     sonarqube
 }
