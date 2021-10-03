@@ -1,5 +1,5 @@
-def APP_REPO = "https://github.com/livelace/gombokey.git"
 def APP_NAME = "gombokey"
+def APP_REPO = "https://github.com/livelace/gombokey.git"
 def APP_VERSION = env.VERSION + '-${GIT_COMMIT_SHORT}'
 
 libraries {
@@ -28,7 +28,5 @@ libraries {
         source = "${APP_NAME}-${APP_VERSION}.appimage"
         destination = "dists-internal/gombokey/${APP_NAME}-${APP_VERSION}.appimage"
     }
-    sonarqube {
-      project = "${APP_NAME}"
-    }
+    sonarqube
 }
