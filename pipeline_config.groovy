@@ -28,5 +28,7 @@ libraries {
         source = "${APP_NAME}-${APP_VERSION}.appimage"
         destination = "dists-internal/gombokey/${APP_NAME}-${APP_VERSION}.appimage"
     }
-    sonarqube
+    sonarqube {
+      project = "${APP_NAME}"
+    }
 }
