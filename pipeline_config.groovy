@@ -1,6 +1,6 @@
 def APP_REPO = "https://github.com/livelace/gombokey.git"
 def APP_NAME = "gombokey"
-def APP_VERSION = VERSION  + '-${GIT_COMMIT_SHORT}'
+def APP_VERSION = '${VERSION}-${GIT_COMMIT_SHORT}'
 
 libraries {
     appimage {
