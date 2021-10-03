@@ -1,12 +1,12 @@
 libraries {
     appimage {
         source = "gombokey"
-        destination = 'gombokey-${VERSION}.appimage'
+        destination = "gombokey-${env.VERSION}.appimage"
     }
     dependency_check
     dependency_track {
         project = "gombokey"
-        version = "master"
+        version = "${env.VERSION}"
     }
     git {
         repo_url = "https://github.com/livelace/gombokey.git"
@@ -20,8 +20,8 @@ libraries {
     }
     mattermost
     nexus {
-        source = 'gombokey-${VERSION}.appimage'
-        destination = 'dists-internal/gombokey/gombokey-${VERSION}.appimage'
+        source = "gombokey-${env.VERSION}.appimage"
+        destination = 'dists-internal/gombokey/gombokey-${env.VERSION}.appimage'
     }
     sonarqube
     version
