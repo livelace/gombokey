@@ -18,6 +18,7 @@ libraries {
     }
     go {
         options = "github.com/livelace/gombokey/cmd/gombokey"
+        test = false
     }
     k8s_build {
         image = "harbor-core.k8s-2.livelace.ru/dev/gobuild:latest"
