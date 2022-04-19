@@ -17,7 +17,8 @@ libraries {
         repo_branch = env.VERSION
     }
     go {
-        options = "github.com/livelace/gombokey/cmd/gombokey"
+        options = "-ldflags=\"-X 'github.com/livelace/gombokey/pkg/gombokey/gombokey.APP_VERSION=${APP_VERSION}'\" " +
+            "github.com/livelace/gombokey/cmd/gombokey"
         test = false
     }
     k8s_build {

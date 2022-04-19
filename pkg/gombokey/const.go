@@ -1,9 +1,11 @@
 package gombokey
 
-const (
+var (
 	APP_NAME    = "gombokey"
-	APP_VERSION = "v1.0.0"
+	APP_VERSION = "devel"
+)
 
+const (
 	DEFAULT_DEVICE_PATH     = "/dev/input/event*"
 	DEFAULT_EXEC_TIMEOUT    = 60
 	DEFAULT_INPUT_TIMEOUT   = 5
